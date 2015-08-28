@@ -4,7 +4,7 @@ Auction = React.createClass({
   },
   render() {
     return (
-      <li>{this.props.auction.text}</li>
+      <li>({moment(this.props.auction.createdAt).format()}) {this.props.auction.title} - {this.props.auction.description}</li>
     );
   }
 });
