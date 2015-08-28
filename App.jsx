@@ -33,10 +33,11 @@ App = React.createClass({
   },
 
   render() {
+    var gridStyle = {width: "100%", minHeight: "150px"};
     return (
       <div className="container">
         <header>
-          <h1>Auctions</h1>
+          <Header/>
         </header>
 
         <form className="new-auction" >
@@ -59,8 +60,9 @@ App = React.createClass({
 
 
         <ul>
+        <div className="ui stackable four column grid" style={gridStyle}>
           {this.renderAuctions()}
-        </ul>
+        </div>
       </div>
     );
   }
