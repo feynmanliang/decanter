@@ -1,3 +1,5 @@
+accounts-base@1.2.0
+accounts-password@1.1.1
 autopublish@1.0.3
 autoupdate@1.2.1
 babel-compiler@5.6.15
@@ -14,6 +16,7 @@ cosmos:browserify@0.5.0
 ddp@1.1.0
 deps@1.0.7
 ejson@1.0.6
+email@1.0.6
 fastclick@1.0.3
 flemay:less-autoprefixer@1.1.0
 geojson-utils@1.0.3
@@ -28,6 +31,7 @@ jsx@0.1.2
 kadira:flow-router@2.4.0
 launch-screen@1.0.2
 livedata@1.0.13
+localstorage@1.0.3
 logging@1.0.7
 meteor@1.1.6
 meteor-platform@1.2.2
@@ -36,6 +40,7 @@ minimongo@1.0.8
 mobile-status-bar@1.0.3
 momentjs:moment@2.10.6
 mongo@1.1.0
+npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 random@1.0.3
@@ -51,13 +56,19 @@ retry@1.0.3
 routepolicy@1.0.5
 semantic:ui@2.0.8
 semantic:ui-data@2.0.8
+service-configuration@1.0.4
 session@1.1.0
+sha@1.0.3
+softwarerero:accounts-t9n@1.0.9
 spacebars@1.0.6
 spacebars-compiler@1.0.6
+srp@1.0.3
 templating@1.1.1
 tracker@1.0.7
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
+useraccounts:core@1.12.3
+useraccounts:semantic-ui@1.12.3
 webapp@1.2.0
 webapp-hashing@1.0.3

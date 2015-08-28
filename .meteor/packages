@@ -12,3 +12,5 @@ kadira:flow-router
 semantic:ui
 flemay:less-autoprefixer
 momentjs:moment
+useraccounts:semantic-ui
+accounts-password
