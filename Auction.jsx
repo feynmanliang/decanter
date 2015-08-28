@@ -1,4 +1,3 @@
-// Task component - represents a single todo item
 Auction = React.createClass({
   propTypes: {
     auction: React.PropTypes.object.isRequired
@@ -8,7 +7,9 @@ Auction = React.createClass({
     return (
        <div className="column">
           <div className="back-image" style={imageStyle}></div>
-            {this.props.auction.text}
+            {this.props.auction.title} -
+            {this.props.auction.description} -
+            {this.props.auction.createdAt} -
        </div>
     );
   }
