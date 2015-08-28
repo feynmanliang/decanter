@@ -7,9 +7,11 @@ Auction = React.createClass({
     return (
        <div className="column">
           <div className="back-image" style={imageStyle}></div>
+          <a href={FlowRouter.path("auction", {_id: this.props.auction._id}, {})}>
             {this.props.auction.title} -
             {this.props.auction.description} -
-            {this.props.auction.createdAt} -
+            {moment(this.props.auction.createdAt).format()}
+          </a>
        </div>
     );
   }
