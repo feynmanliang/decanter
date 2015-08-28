@@ -1,13 +1,16 @@
 // App component - represents the whole app
 App = React.createClass({
-  getAuctions() {
-    return [
-      { _id: 1, text: "This is auction 1" },
-    ];
+
+  mixins: [ReactMeteorData],
+
+  getMeteorData() {
+    return {
+      auctions: Auctions.find({}).fetch()
+    }
   },
 
   renderAuctions() {
-    return this.getAuctions().map((auction) => {
+    return this.data.auctions.map((auction) => {
       return <Auction key={auction._id} auction={auction} />;
     });
   },
