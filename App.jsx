@@ -35,11 +35,7 @@ App = React.createClass({
   render() {
     var gridStyle = {width: "100%", minHeight: "150px"};
     return (
-      <div className="container">
-        <header>
-          <Header/>
-        </header>
-
+      <div>
         <AccountsUIWrapper />
 
         <form className="new-auction" >
