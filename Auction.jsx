@@ -4,8 +4,12 @@ Auction = React.createClass({
     auction: React.PropTypes.object.isRequired
   },
   render() {
+    const imageStyle = {width: "100%", height: "40%"};
     return (
-      <li>{this.props.auction.text}</li>
+       <div className="column">
+          <div className="back-image" style={imageStyle}></div>
+            {this.props.auction.text}
+       </div>
     );
   }
 });
