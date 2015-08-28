@@ -24,6 +24,7 @@ Header =  React.createClass({
             </a>
           </div>
         </div>
+        {this.props.content}
       </span>
     );
   }

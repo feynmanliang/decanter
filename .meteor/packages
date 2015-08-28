@@ -14,3 +14,4 @@ flemay:less-autoprefixer
 momentjs:moment
 useraccounts:semantic-ui
 accounts-password
+kadira:react-layout
