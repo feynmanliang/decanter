@@ -40,6 +40,8 @@ App = React.createClass({
           <Header/>
         </header>
 
+        <AccountsUIWrapper />
+
         <form className="new-auction" >
           <input
             type="title"
