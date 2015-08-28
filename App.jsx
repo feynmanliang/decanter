@@ -59,7 +59,6 @@ App = React.createClass({
         </form>
 
 
-        <ul>
         <div className="ui stackable four column grid" style={gridStyle}>
           {this.renderAuctions()}
         </div>
