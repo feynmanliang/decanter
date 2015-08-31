@@ -17,7 +17,6 @@ App = React.createClass({
   handleSubmit() {
     event.preventDefault();
 
-    // Find the text field via the React ref
     var title = React.findDOMNode(this.refs.titleInput).value.trim();
     var description = React.findDOMNode(this.refs.descriptionInput).value.trim();
 
@@ -27,7 +26,6 @@ App = React.createClass({
       createdAt: new Date() // current time
     });
 
-    // Clear form
     React.findDOMNode(this.refs.titleInput).value = "";
     React.findDOMNode(this.refs.descriptionInput).value = "";
   },
@@ -40,11 +38,11 @@ App = React.createClass({
 
         <form className="new-auction" >
           <input
-            type="title"
+            type="text"
             ref="titleInput"
             placeholder="Auction title goes here" /><br />
           <input
-            type="description"
+            type="text"
             ref="descriptionInput"
             placeholder="Description goes here" /><br />
           <button
