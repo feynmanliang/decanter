@@ -28,8 +28,8 @@ Header =  React.createClass({
                 <i className="search link icon"></i>
               </div>
             </div>
-            <a className="item">
-              Decanter <div><a href="/signin">{this.data.currUser ? " logout" : " login/signup"}</a></div>
+            <a className="item" href="/signin">
+              {this.data.currUser ? " logout" : " login/signup"}
             </a>
           </div>
         </div>
