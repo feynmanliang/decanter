@@ -20,7 +20,14 @@ AccountsTemplates.addFields([
   //},
   pwd
 ]);
-
+AccountsTemplates.configure({
+   onSubmitHook: function() {
+    FlowRouter.go('/');
+   },
+   onLogoutHook: function() {
+    FlowRouter.go('/');
+   }
+});
 if (Meteor.isClient) {
   //comment
 }
