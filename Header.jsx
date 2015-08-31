@@ -17,10 +17,7 @@ Header =  React.createClass({
             Home
           </a>
           <a className="item">
-            Messages
-          </a>
-          <a className="item">
-            Friends
+            Create New Auction
           </a>
           <div className="right menu">
             <div className="item">

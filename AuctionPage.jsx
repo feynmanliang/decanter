@@ -7,10 +7,10 @@ AuctionPage = React.createClass({
     return {
       auction: Auctions.findOne(this.props._id),
       currentUser: Meteor.user(),
-      itemBids: this.sortBids(Bids.find({}).fetch())
+      itemBids: this.sortDescend(Bids.find({}).fetch())
     }
   },
-  sortBids() {
+  sortDescend() {
     return arguments[0].sort(function(a,b) {
       if (a.createdAt > b.createdAt) {
         return -1;
