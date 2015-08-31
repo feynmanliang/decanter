@@ -14,3 +14,14 @@ FlowRouter.route('/auction/:_id', {
     });
   }
 });
+
+FlowRouter.route('/signin', {
+  action: function() {
+    console.log('signin');
+    ReactLayout.render(MainLayout, {
+      content: <AccountsUIWrapper/>
+
+    });
+  }
+});
+

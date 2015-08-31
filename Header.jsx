@@ -1,4 +1,13 @@
 Header =  React.createClass({
+  mixins: [ReactMeteorData],
+  getMeteorData() {
+    console.log('inside get mete dat');
+
+    console.log(Meteor.user());
+    return {
+      currUser: Meteor.user()
+    };
+  },
   render() {
     return (
       <span>
@@ -19,8 +28,8 @@ Header =  React.createClass({
                 <i className="search link icon"></i>
               </div>
             </div>
-            <a className="ui item">
-              Decanter
+            <a className="item">
+              Decanter <div><a href="/signin">{this.data.currUser ? " logout" : " login/signup"}</a></div>
             </a>
           </div>
         </div>

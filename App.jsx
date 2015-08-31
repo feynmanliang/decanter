@@ -34,7 +34,6 @@ App = React.createClass({
     var gridStyle = {width: "100%", minHeight: "150px"};
     return (
       <div>
-        <AccountsUIWrapper />
 
         <form className="new-auction" >
           <input
