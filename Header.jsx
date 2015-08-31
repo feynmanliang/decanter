@@ -13,7 +13,7 @@ Header =  React.createClass({
     return (
       <span>
         <div className="ui secondary  menu">
-          <a className="active item">
+          <a className="active item" href="/">
             Home
           </a>
           <a className="item">
