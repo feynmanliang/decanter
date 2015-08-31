@@ -1,4 +1,5 @@
 Auctions = new Mongo.Collection("auctions");
+Bids = new Mongo.Collection("bids");
 
 var pwd = AccountsTemplates.removeField('password');
 AccountsTemplates.removeField('email');
